@@ -1,0 +1,542 @@
+
+.page{
+    width: 1600px;
+    margin: 0 auto;
+    zoom: 0.8;
+}
+a{
+    color: #FFFFFF;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+ }
+
+.nav{
+    height: 80px;
+    /*80*/
+    background-color:#000000;
+    margin: 0 auto;
+    width: 100%;
+}
+.nav_logo{
+    margin-left: 215px;
+    margin-right: 135px;
+    /*215 135*/
+    font-size: 25px;
+    /*25*/
+    color: #FFFFFF;
+    line-height: 80px;
+}
+.nav_logo a{
+    color: #FFFFFF;
+}
+.nav_nav ul li{
+    float: left;
+    color: #FFFFFF;
+    line-height: 80px;
+    font-size: 16px;
+    /*16*/
+    margin-right:39px ;
+    /*39*/
+}
+.nav_sign{
+    margin-right: 215px;
+    /*215;*/
+    line-height: 80px;
+}
+.nav_sign_btn{
+    width: 90px;
+    height: 35px;
+    /*90 35-77 30*/
+    border-radius: 9px 9px;
+    background-color:rgba(0, 0, 0, 0) ;
+    border: 3px solid #ca3c3c;
+    color: #ca3c3c;
+    font-size: 16px;
+}
+.header{
+    height: 820px;
+    background-color: rgba(102,102,102,0.5);
+}
+/*.header video{*/
+    /*width:1000px ;*/
+    /*filter:grayscale(50%);*/
+    /*z-index: -9999;*/
+    /*margin: 0;*/
+    /*position: absolute;*/
+    /*marquee-loop: infinite;*/
+    /*opacity: 0.5;*/
+/*}*/
+.header_play{
+    margin: 305px 0 auto 215px;
+}
+.header_play img{
+    width: 130px;
+}
+.header_nima{
+    clear:right;
+}
+.header_text{
+    font-size: 60px;
+    color: #FFFFFF;
+    margin: 326px 0 0 25px;
+}
+.header_toplay{
+    font-size: 16px;
+    color: #ca3c3c;
+    margin: -5px 0 0 27px;
+}
+.red{
+    height: 360px;
+    background-color: #ca3c3c;
+}
+.red_l{
+    font-size: 72px;
+    color: #FFFFFF;
+    width: 370px;
+    border-bottom: 10px solid white;
+    margin: 39px 0 0 215px;
+}
+.red_r1{
+    margin: 0 30px 0 0;
+}
+.red_r1_t{
+    color: #FFFFFF;
+    margin: 10px 0 0 0;
+}
+.red_r1_t1{
+  font-size: 12px;
+  padding: 0;
+}
+.red_r1_t2{
+    margin-bottom: 15px;
+    padding: 0;
+}
+.r1,.r2,.r3,.r4{
+    float: left;
+    /*width: 370px;*/
+    /*height: 110px;*/
+    margin: 50px 0 0 30px;
+}
+.icon{
+    height: 150px;
+}
+.icon span{
+    display:inline-block;
+    /*span是块级元素，使用inline-block不换行，可改变宽高*/
+    background-image: url("../images/icons.png");
+    width: 40px;
+    height: 33px;
+}
+.icon1{
+    background-position:0 0;
+    margin: 58px 170px 58px 245px;
+}
+.icon2{
+    background-position: 40px 0;
+    margin: 58px 170px 58px 0;
+}
+.icon3{
+    background-position: 80px 0;
+    margin: 58px 170px 58px 0;
+}
+.icon4{
+    background-position: 120px 0;
+    margin: 58px 170px 58px 0;
+}
+.icon5{
+    background-position: 160px 0;
+    margin: 58px 170px 58px 0;
+}
+.icon6{
+    background-position: 200px 0;
+    margin: 58px 0 58px 0;
+}
+.works{
+    display: inline-block;
+    /*这里一定要有inline-block*/
+    height: 1210px;
+    background-color: #EBEBEB;
+    position:relative;
+}
+.works_l{
+    font-size: 72px;
+    color:#000000;
+    width: 370px;
+    border-bottom: 10px solid black;
+    /*padding: 39px 0 0 0;*/
+    margin: 39px 0 0 215px;
+}
+.works_btns{
+    margin: 30px 0 0 215px;
+}
+.works_btn{
+    width: 90px;
+    height: 35px;
+    /*90 35-77 30*/
+    border-radius: 9px 9px;
+    background-color:rgba(0, 0, 0, 0) ;
+    border: 3px solid #ca3c3c;
+    color: #ca3c3c;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.works_btn:hover{
+    background-color: #ca3c3c;
+    color: #FFFFFF;
+}
+
+.works_imgs_alt{
+    margin: 60px 0 0 215px;
+}
+.works_imgs_alt_more{
+    margin:0 0 0 215px;
+}
+.works_imgs_alt_more p{
+    background-color: white;
+    width: 370px;
+    height: 100px;
+    float: left;
+    margin: 270px 30px 30px 0;
+    text-align: center;
+}
+.works_imgs_alt p{
+    background-color: white;
+    width: 370px;
+    height: 100px;
+    float: left;
+    margin: 270px 30px 30px 0;
+    padding: 0;
+    text-align: center;
+}
+.works_imgs_alt_n{
+    font-size: 18px;
+    color: #ca3c3c;
+    line-height: 60px;
+}
+.works_imgs_alt_t{
+    font-size: 14px;
+    color: gray;
+}
+.works_imgs_more{
+    margin: 0 0 0 215px;
+    position: absolute;
+
+}
+
+.works_imgs{
+    margin: 60px 0 0 215px;
+    position: absolute;
+}
+
+.works_more{
+    display: none;
+}
+.works_imgs_more{
+    position: absolute;
+}
+.works_more_wh{
+    position: relative;
+    height: 1000px;
+    background-color: #EBEBEB;
+}
+
+
+.works_imgs p ,.works_imgs_more p{
+    background-color: gray;
+    width: 370px;
+    height: 370px;
+    float: left;
+    margin: 0 30px 30px 0;
+    transition:height 0.7s;
+    -moz-transition:height 0.7s; /* Firefox 4 */
+    -webkit-transition:height 0.7s; /* Safari and Chrome */
+    -o-transition:height 0.7s; /* Opera */
+}
+.clear{
+    clear: left;
+}
+.works_imgs p:hover{
+    height: 270px;
+    width: 370px;
+}
+.works_imgs_more p:hover{
+
+    height: 270px;
+    width: 370px;
+}
+
+.person{
+    height: 350px;
+    background-color: #666666;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 36px;
+}
+.person_text{
+    display: inline-block;
+    width: 770px;
+    margin: 54px auto 17px auto;
+}
+.person_img{
+    background-color: #FFFFFF;
+    width: 70px;
+    height: 70px;
+    border-radius: 35px 35px;
+    margin: 0 auto;
+}
+.team{
+    height: 915px;
+}
+.team_l{
+    font-size: 72px;
+    color:#000000;
+    width: 370px;
+    border-bottom: 10px solid black;
+    margin: 39px 0 0 215px;
+}
+.team_o{
+    margin: 80px 0 0 215px;
+    display: inline-block;
+}
+.team_o1{
+background-color: gray;
+width: 170px;
+height: 170px;
+border-radius: 85px;
+/*display:inline;*/
+}
+.soc{
+    position: relative;
+}
+.soc s{
+    background-image: url("../images/tfi.png");
+    display:inline-block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+.soc1{
+    background-position: 0 0;
+    margin: 60px 0 0 140px;
+}
+.soc2{
+    background-position: 110px 0;
+    margin: 60px 0 0 200px;
+}
+.soc3{
+    background-position: 50px 0;
+    margin: 60px 0 0 260px;
+}
+.team_o_t{
+    margin: 45px 0 0 100px;
+}
+.team_o_t_n{
+    color: #ca3c3c;
+    font-size: 18px;
+}
+.team_o_t_j{
+    color: #666666;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.team_o_t_alt{
+    font-size: 14px;
+    width: 300px;
+    margin-top: 20px;
+}
+/*定义多个类要用,逗号，切记*/
+.team_t,.team_th{
+    margin: 80px 0 0 30px;
+    display: inline-block;
+}
+.more{
+    clear: left;
+    float: left;
+    margin: -6px 0 0 215px;
+}
+.number{
+    height: 350px;
+    background-color: #666666;
+    margin: 0;
+
+}
+.number1 {
+    margin: 85px 0 0 275px;
+    float: left;
+    /*设为浮动即可解决该盒子margin-top一直无法浮于父级盒子之上！！！！*/
+    text-align: center;
+}
+.number p{
+    color: #FFFFFF;
+}
+.number2 , .number3, .number4{
+    margin: 85px 0 0 125px;
+    float: left;
+    text-align: center;
+}
+.skills{
+    height: 840px;
+}
+.skills_l{
+    font-size: 72px;
+    color:#000000;
+    width: 370px;
+    border-bottom: 10px solid black;
+    margin: 39px 0 0 215px;
+}
+.s1{
+    margin: 80px 0 0 215px;
+}
+.s2, .s3,.s4{
+    margin: 80px 0 0 50px;
+}
+.skills_t1{
+    margin: 45px 0 0 315px;
+    font-size: 18px;
+    color: #ca3c3c;
+}
+.skills_t2{
+    margin: 30px 0 0 315px;
+    font-size: 14px;
+    width: 670px;
+}
+.huojian, .lock, .jiantou, .book , .tel{
+    width: 370px;
+    height: 50px;
+    border: 1px solid #ebebeb;
+    border-radius: 9px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+.huojian{
+    margin-top: 80px;
+}
+.skills1{
+    margin: 15px;
+}
+.skills1_1{
+    color: #ca3c3c;
+    font-size: 14px;
+    line-height: 50px;
+}
+
+.skills1_2{
+    width: 350px;
+    margin: 20px 0 25px 50px;
+    display: none;
+}
+
+.skills_r input{
+    float: right;
+    zoom: 1.5;
+    margin: 13px;
+}
+.skills2{
+    color: #ca3c3c;
+    font-size: 14px;
+    line-height: 50px;
+}
+.contact{
+    background-color: #EBEBEB;
+    height: 710px;
+}
+.contact_l{
+    font-size: 72px;
+    color:#000000;
+    width: 370px;
+    border-bottom: 10px solid black;
+    margin: 39px 0 0 215px;
+}
+.contact_alt{
+    clear: left;
+    color: #898989;
+    margin: 35px 0 0 215px;
+}
+.contact_tw{
+    background-image: url("../images/tfi.png");
+    display:inline-block;
+    /*position: absolute;*/
+    width: 50px;
+    height: 50px;
+    background-position: 0 0;
+    clear: left;
+    margin: 30px 0 0 215px;
+}
+.contact_fa{
+    background-image: url("../images/tfi.png");
+    display:inline-block;
+    /*position: absolute;*/
+    width: 50px;
+    height: 50px;
+    background-position: 50px 0;
+    margin: 30px 0 0 30px;
+}
+.contact_in{
+    background-image: url("../images/tfi.png");
+    display:inline-block;
+    /*position: absolute;*/
+    width: 50px;
+    height: 50px;
+    background-position: 110px 0;
+    margin: 30px 0 0 30px;
+}
+.contact_email{
+    width: 370px;
+    height: 50px;
+    border: 2px solid black;
+    background-color:rgba(0, 0, 0, 0) ;
+    clear: left;
+    margin: 50px 30px 0 215px;
+}
+.contact_name{
+    width: 370px;
+    height: 50px;
+    border: 2px solid black;
+    background-color:rgba(0, 0, 0, 0) ;
+    margin: 50px 0 0 0;
+}
+.contact_msg{
+    width: 774px;
+    height: 78px;
+    border: 2px solid black;
+    background-color:rgba(0, 0, 0, 0) ;
+    clear: left;
+    margin: 30px 0 0 215px;
+}
+.contact_sub{
+    width: 370px;
+    height: 80px;
+    background-color: #FFFFFF;
+    color: #ca3c3c;
+    margin: 30px 0 0 30px;
+    border: none;
+    border-radius: 10px;
+}
+.footer{
+    height: 175px;
+    background-color: #252525;
+}
+.footer P{
+    text-align: center;
+}
+.footer_logo{
+    font-size: 30px;
+    color: #FFFFFF;
+    padding-top: 45px;
+    /*margin-top: 45px;*/
+}
+.footer_copy{
+    color: #555555;
+    font-size: 14px;
+    line-height: 25px;
+}
+.footer img{
+    margin-top: 15px;
+}
+
+
+
