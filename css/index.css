@@ -1,8 +1,10 @@
 
 .page{
-    width: 1600px;
-    margin: 0 auto;
-    zoom: 0.8;
+    min-width: 1240px;
+}
+.container{
+    width: 1170px;
+    margin:0 auto;
 }
 a{
     color: #FFFFFF;
@@ -16,15 +18,12 @@ a{
 
 .nav{
     height: 80px;
-    /*80*/
     background-color:#000000;
-    margin: 0 auto;
-    width: 100%;
+    position: relative;
 }
 .nav_logo{
-    margin-left: 215px;
     margin-right: 135px;
-    /*215 135*/
+    /*0 135*/
     font-size: 25px;
     /*25*/
     color: #FFFFFF;
@@ -43,8 +42,6 @@ a{
     /*39*/
 }
 .nav_sign{
-    margin-right: 215px;
-    /*215;*/
     line-height: 80px;
 }
 .nav_sign_btn{
@@ -53,26 +50,38 @@ a{
     /*90 35-77 30*/
     border-radius: 9px 9px;
     background-color:rgba(0, 0, 0, 0) ;
-    border: 3px solid #ca3c3c;
+    border: 2px solid #ca3c3c;
     color: #ca3c3c;
     font-size: 16px;
 }
+
 .header{
-    height: 820px;
+    height: 700px;
     background-color: rgba(102,102,102,0.5);
+    position: relative;
 }
-/*.header video{*/
-    /*width:1000px ;*/
-    /*filter:grayscale(50%);*/
-    /*z-index: -9999;*/
-    /*margin: 0;*/
-    /*position: absolute;*/
+.header video{
+    /*height: 820px;*/
+    filter:grayscale(50%);
+    z-index: -9999;
+    margin: 0;
+    position: absolute;
     /*marquee-loop: infinite;*/
-    /*opacity: 0.5;*/
-/*}*/
-.header_play{
-    margin: 305px 0 auto 215px;
+    opacity: 0.5;
+    object-fit: cover;
+    width: inherit;
 }
+.container_video{
+    width: 100%;
+    overflow: hidden;
+}
+
+.play_all{
+    margin: 285px 0 auto 0;
+}
+/*.header_play{*/
+    /*margin: 305px 0 auto 0;*/
+/*}*/
 .header_play img{
     width: 130px;
 }
@@ -80,14 +89,10 @@ a{
     clear:right;
 }
 .header_text{
-    font-size: 60px;
+    font-size: 50px;
     color: #FFFFFF;
-    margin: 326px 0 0 25px;
-}
-.header_toplay{
-    font-size: 16px;
-    color: #ca3c3c;
-    margin: -5px 0 0 27px;
+    margin-left: 40px;
+    line-height: 130px;
 }
 .red{
     height: 360px;
@@ -96,9 +101,9 @@ a{
 .red_l{
     font-size: 72px;
     color: #FFFFFF;
-    width: 370px;
+    /*width: 370px;*/
     border-bottom: 10px solid white;
-    margin: 39px 0 0 215px;
+    margin: 39px 0 0 0;
 }
 .red_r1{
     margin: 0 30px 0 0;
@@ -116,9 +121,7 @@ a{
     padding: 0;
 }
 .r1,.r2,.r3,.r4{
-    float: left;
-    /*width: 370px;*/
-    /*height: 110px;*/
+    float: right;
     margin: 50px 0 0 30px;
 }
 .icon{
@@ -133,7 +136,7 @@ a{
 }
 .icon1{
     background-position:0 0;
-    margin: 58px 170px 58px 245px;
+    margin: 58px 170px 58px 35px;
 }
 .icon2{
     background-position: 40px 0;
@@ -156,44 +159,44 @@ a{
     margin: 58px 0 58px 0;
 }
 .works{
-    display: inline-block;
-    /*这里一定要有inline-block*/
     height: 1210px;
     background-color: #EBEBEB;
+}
+.works .container{
     position:relative;
+    /*display: inline-block;*/
 }
 .works_l{
     font-size: 72px;
     color:#000000;
     width: 370px;
     border-bottom: 10px solid black;
-    /*padding: 39px 0 0 0;*/
-    margin: 39px 0 0 215px;
+    padding-top: 39px;
+    margin: 0 0 0 0;
 }
 .works_btns{
-    margin: 30px 0 0 215px;
+    margin: 30px 0 0 0;
 }
 .works_btn{
     width: 90px;
     height: 35px;
-    /*90 35-77 30*/
     border-radius: 9px 9px;
     background-color:rgba(0, 0, 0, 0) ;
     border: 3px solid #ca3c3c;
     color: #ca3c3c;
     font-size: 16px;
     margin-right: 10px;
+    transition: .5s;
 }
 .works_btn:hover{
     background-color: #ca3c3c;
     color: #FFFFFF;
 }
-
 .works_imgs_alt{
-    margin: 60px 0 0 215px;
+    margin: 60px 0 0 0;
 }
 .works_imgs_alt_more{
-    margin:0 0 0 215px;
+    margin:0 0 0 0;
 }
 .works_imgs_alt_more p{
     background-color: white;
@@ -222,26 +225,31 @@ a{
     color: gray;
 }
 .works_imgs_more{
-    margin: 0 0 0 215px;
+    margin: 0 0 0 0;
     position: absolute;
-
 }
 
 .works_imgs{
-    margin: 60px 0 0 215px;
+    margin: 60px 0 0 0;
     position: absolute;
 }
 
 .works_more{
     display: none;
+    padding-top: 0;
+    margin-top: 0;
 }
+.works_more_all{
+    background-color: #ebebeb;
+    height: 900px;
+    padding-top: 0;
+}
+
 .works_imgs_more{
     position: absolute;
 }
-.works_more_wh{
+.works_more .container{
     position: relative;
-    height: 1000px;
-    background-color: #EBEBEB;
 }
 
 
@@ -263,8 +271,10 @@ a{
     height: 270px;
     width: 370px;
 }
+/*.works_imgs{*/
+    /*display: none;*/
+/*}*/
 .works_imgs_more p:hover{
-
     height: 270px;
     width: 370px;
 }
@@ -296,11 +306,13 @@ a{
     color:#000000;
     width: 370px;
     border-bottom: 10px solid black;
-    margin: 39px 0 0 215px;
+    margin: 0 0 0 0;
+    padding-top: 39px;
 }
 .team_o{
-    margin: 80px 0 0 215px;
+    margin: 80px 0 0 0;
     display: inline-block;
+    width: 370px;
 }
 .team_o1{
 background-color: gray;
@@ -345,62 +357,91 @@ border-radius: 85px;
 }
 .team_o_t_alt{
     font-size: 14px;
-    width: 300px;
+    /*width: 300px;*/
     margin-top: 20px;
 }
 /*定义多个类要用,逗号，切记*/
 .team_t,.team_th{
     margin: 80px 0 0 30px;
     display: inline-block;
+    width: 370px;
 }
 .more{
-    clear: left;
-    float: left;
-    margin: -6px 0 0 215px;
+    clear: both;
+    /*float: left;*/
+    margin: 0 0 0 0;
 }
 .number{
     height: 350px;
     background-color: #666666;
-    margin: 0;
-
+    /*margin: 0 auto;*/
+}
+.numberAll{
+    width: 1003px;
+    margin: 0 auto 0 auto;
+    /*float: left;*/
+    padding-top: 85px;
 }
 .number1 {
-    margin: 85px 0 0 275px;
+    margin: 0 0 0 0;
     float: left;
     /*设为浮动即可解决该盒子margin-top一直无法浮于父级盒子之上！！！！*/
     text-align: center;
 }
+.nub2009{
+    font-size: 60px;
+}
+.nub2009_text{
+    font-size: 18px;
+}
 .number p{
     color: #FFFFFF;
 }
-.number2 , .number3, .number4{
-    margin: 85px 0 0 125px;
+.number2, .number3,.number4{
+    margin: 0 0 0 125px;
     float: left;
     text-align: center;
 }
 .skills{
     height: 840px;
 }
+.skills .container{
+    position: relative;
+}
+
 .skills_l{
     font-size: 72px;
     color:#000000;
     width: 370px;
     border-bottom: 10px solid black;
-    margin: 39px 0 0 215px;
+    margin: 0 0 0 0;
+    padding-top: 39px;
+}
+.sFour{
+    margin: 80px 0 0 0;
 }
 .s1{
-    margin: 80px 0 0 215px;
+    /*margin: 80px 0 0 0;*/
 }
 .s2, .s3,.s4{
-    margin: 80px 0 0 50px;
+    margin: 0 0 0 30px;
+}
+.skills_r{
+    width: 370px;
+    margin: 80px 0 0 0;
+    background-color: white;
+    border-radius:10px;
+}
+.skills_t{
+    position: absolute;
+    left: 100px;
+    top:545px ;
 }
 .skills_t1{
-    margin: 45px 0 0 315px;
     font-size: 18px;
     color: #ca3c3c;
 }
 .skills_t2{
-    margin: 30px 0 0 315px;
     font-size: 14px;
     width: 670px;
 }
@@ -410,10 +451,13 @@ border-radius: 85px;
     border: 1px solid #ebebeb;
     border-radius: 9px;
     margin-bottom: 10px;
-    margin-left: 30px;
+}
+.book{
+    margin-bottom: 0!important;
+
 }
 .huojian{
-    margin-top: 80px;
+    /*margin-top: 80px;*/
 }
 .skills1{
     margin: 15px;
@@ -426,14 +470,16 @@ border-radius: 85px;
 
 .skills1_2{
     width: 350px;
-    margin: 20px 0 25px 50px;
+    margin: 20px 0 25px 10px;
     display: none;
 }
 
 .skills_r input{
+    /*width: 8px;*/
+    /*height: 8px;*/
     float: right;
-    zoom: 1.5;
-    margin: 13px;
+    /*zoom: 1.5;*/
+    margin: 21px;
 }
 .skills2{
     color: #ca3c3c;
@@ -449,12 +495,12 @@ border-radius: 85px;
     color:#000000;
     width: 370px;
     border-bottom: 10px solid black;
-    margin: 39px 0 0 215px;
+    margin: 39px 0 0 0;
 }
 .contact_alt{
     clear: left;
     color: #898989;
-    margin: 35px 0 0 215px;
+    margin: 35px 0 0 0;
 }
 .contact_tw{
     background-image: url("../images/tfi.png");
@@ -464,7 +510,7 @@ border-radius: 85px;
     height: 50px;
     background-position: 0 0;
     clear: left;
-    margin: 30px 0 0 215px;
+    margin: 30px 0 0 0;
 }
 .contact_fa{
     background-image: url("../images/tfi.png");
@@ -485,27 +531,27 @@ border-radius: 85px;
     margin: 30px 0 0 30px;
 }
 .contact_email{
-    width: 370px;
-    height: 50px;
+    width: 366px;
+    height: 46px;
     border: 2px solid black;
     background-color:rgba(0, 0, 0, 0) ;
     clear: left;
-    margin: 50px 30px 0 215px;
+    margin: 50px 30px 0 0;
 }
 .contact_name{
-    width: 370px;
-    height: 50px;
+    width: 366px;
+    height: 46px;
     border: 2px solid black;
     background-color:rgba(0, 0, 0, 0) ;
     margin: 50px 0 0 0;
 }
 .contact_msg{
-    width: 774px;
-    height: 78px;
+    width: 766px;
+    height: 76px;
     border: 2px solid black;
     background-color:rgba(0, 0, 0, 0) ;
     clear: left;
-    margin: 30px 0 0 215px;
+    margin: 30px 0 0 0;
 }
 .contact_sub{
     width: 370px;
@@ -536,6 +582,9 @@ border-radius: 85px;
 }
 .footer img{
     margin-top: 15px;
+}
+.margin-right-none{
+    margin-right: 0!important;
 }
 
 
