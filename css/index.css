@@ -23,9 +23,7 @@ a{
 }
 .nav_logo{
     margin-right: 135px;
-    /*0 135*/
     font-size: 25px;
-    /*25*/
     color: #FFFFFF;
     line-height: 80px;
 }
@@ -37,9 +35,7 @@ a{
     color: #FFFFFF;
     line-height: 80px;
     font-size: 16px;
-    /*16*/
     margin-right:39px ;
-    /*39*/
 }
 .nav_sign{
     line-height: 80px;
@@ -47,7 +43,6 @@ a{
 .nav_sign_btn{
     width: 90px;
     height: 35px;
-    /*90 35-77 30*/
     border-radius: 9px 9px;
     background-color:rgba(0, 0, 0, 0) ;
     border: 2px solid #ca3c3c;
@@ -61,12 +56,9 @@ a{
     position: relative;
 }
 .header video{
-    /*height: 820px;*/
-    filter:grayscale(50%);
     z-index: -9999;
     margin: 0;
     position: absolute;
-    /*marquee-loop: infinite;*/
     opacity: 0.5;
     object-fit: cover;
     width: inherit;
@@ -79,9 +71,6 @@ a{
 .play_all{
     margin: 285px 0 auto 0;
 }
-/*.header_play{*/
-    /*margin: 305px 0 auto 0;*/
-/*}*/
 .header_play img{
     width: 130px;
 }
@@ -101,7 +90,6 @@ a{
 .red_l{
     font-size: 72px;
     color: #FFFFFF;
-    /*width: 370px;*/
     border-bottom: 10px solid white;
     margin: 39px 0 0 0;
 }
@@ -126,6 +114,7 @@ a{
 }
 .icon{
     height: 150px;
+    background-color: white;
 }
 .icon span{
     display:inline-block;
@@ -271,9 +260,6 @@ a{
     height: 270px;
     width: 370px;
 }
-/*.works_imgs{*/
-    /*display: none;*/
-/*}*/
 .works_imgs_more p:hover{
     height: 270px;
     width: 370px;
@@ -357,7 +343,6 @@ border-radius: 85px;
 }
 .team_o_t_alt{
     font-size: 14px;
-    /*width: 300px;*/
     margin-top: 20px;
 }
 /*定义多个类要用,逗号，切记*/
@@ -475,10 +460,7 @@ border-radius: 85px;
 }
 
 .skills_r input{
-    /*width: 8px;*/
-    /*height: 8px;*/
     float: right;
-    /*zoom: 1.5;*/
     margin: 21px;
 }
 .skills2{
