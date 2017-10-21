@@ -5,8 +5,6 @@
     <title>DESIGN</title>
     <link rel="stylesheet" href="css/cssReset.css">
     <link rel="stylesheet" href="css/index.css">
-    <script language="JavaScript" src="js/main.js">
-    </script>
 </head>
 <body>
     <div class="page">
@@ -46,47 +44,34 @@
         <div class="red">
             <div class="container">
                 <p class="red_l fl">OUR<br>SERVICES.</p>
-                <!--这里改成fl就可以不换行了，因为p是块级元素，会换行显示，这里使用浮动使元素并列，清除浮动可用clear-->
-                <div class="r1">
-                    <img class="red_r1 fl" src="images/r1.png" alt="clound">
-                    <div class="red_r1_t fr">
-                        <p class="red_r1_t2">Feature</p>
-                        <p class="red_r1_t1">Lorem ipsum dolor sit amet, consectetur</p>
-                        <p class="red_r1_t1">adipisicing elit, sed do eiusmod.</p>
-                    </div>
-                    <!--这里有一个div盒子装了3个p盒子，div设为fl，为内联元素，但对于内部p盒子还是块级元素，会自动换行-->
-                </div>
-
-                <div class="r2">
-                    <img class="red_r1 fl" src="images/r2.png" alt="clound">
-                    <div class="red_r1_t fl">
-                        <p class="red_r1_t2">Feature</p>
-                        <p class="red_r1_t1">Lorem ipsum dolor sit amet, consectetur</p>
-                        <p class="red_r1_t1">adipisicing elit, sed do eiusmod.</p>
-                    </div>
-                    <!--这里有一个div盒子装了3个p盒子，div设为fl，为内联元素，但对于内部p盒子还是块级元素，会自动换行-->
-
-                </div>
-
-                <div class="r3">
-                    <img class="red_r1 fl" src="images/r3.png" alt="clound">
-                    <div class="red_r1_t fl">
-                        <p class="red_r1_t2">Feature</p>
-                        <p class="red_r1_t1">Lorem ipsum dolor sit amet, consectetur</p>
-                        <p class="red_r1_t1">adipisicing elit, sed do eiusmod.</p>
+                <div class="red_r">
+                    <img class="fl" src="images/r1.png" alt="cloud">
+                    <div class="fr">
+                        <p class="red_r_t">Feature</p>
+                        <p class="red_r_d">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
                     </div>
                 </div>
-
-                <div class="r4">
-                    <img class="red_r1 fl" src="images/r4.png" alt="clound">
-                    <div class="red_r1_t fl">
-                        <p class="red_r1_t2">Feature</p>
-                        <p class="red_r1_t1">Lorem ipsum dolor sit amet, consectetur</p>
-                        <p class="red_r1_t1">adipisicing elit, sed do eiusmod.</p>
+                <div class="red_r">
+                    <img class=" fl" src="images/r2.png" alt="cloud">
+                    <div class="fr">
+                        <p class="red_r_t">Feature</p>
+                        <p class="red_r_d">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
                     </div>
-                    <!--这里有一个div盒子装了3个p盒子，div设为fl，为内联元素，但对于内部p盒子还是块级元素，会自动换行-->
                 </div>
-                <!--将外边距等都由r1、r2、r3、r4控制，这样复制4个才不会出错-->
+                <div class="red_r">
+                    <img class=" fl" src="images/r3.png" alt="cloud">
+                    <div class="fr">
+                        <p class="red_r_t">Feature</p>
+                        <p class="red_r_d">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                    </div>
+                </div>
+                <div class="red_r">
+                    <img class=" fl" src="images/r4.png" alt="cloud">
+                    <div class="fr">
+                        <p class="red_r_t">Feature</p>
+                        <p class="red_r_d">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="icon">
@@ -109,52 +94,63 @@
                 </div>
 
                 <div class="works_imgs">
-                    <p></p>
-                    <p></p>
-                    <p class="margin-right-none"></p>
-                    <p class="clear"></p>
-                    <p></p>
-                    <p class="margin-right-none"></p>
-                </div>
-                <div class="works_imgs_alt">
-                    <p><a class="works_imgs_alt_n">Name preject</a><br><a class="works_imgs_alt_t">Designed by simmzl | May 8, 2017</a></p>
-                    <p><a class="works_imgs_alt_n">Name preject</a><br><a class="works_imgs_alt_t">Designed by simmzl | May 8, 2017</a></p>
-                    <p class="margin-right-none">
-                        <a class=" works_imgs_alt_n">Name preject</a><br><a class="works_imgs_alt_t">Designed by simmzl | May 8, 2017</a>
-                    </p>
-                    <p><a class="works_imgs_alt_n">Name preject</a><br><a class="works_imgs_alt_t">Designed by simmzl | May 8, 2017</a></p>
-                    <p><a class="works_imgs_alt_n">Name preject</a><br><a class="works_imgs_alt_t">Designed by simmzl | May 8, 2017</a></p>
-                    <p class="margin-right-none">
-                        <a class=" works_imgs_alt_n">Name preject</a><br><a class="works_imgs_alt_t">Designed by simmzl | May 8, 2017</a>
-                    </p>
+                    <div class="img_cont">
+                        <p class="test"></p>
+                        <p class="test1"><a class="works_imgs_t">Name preject</a><a class="works_imgs_d">Download from dribbble.com | May 8, 2017</a></p>
+                    </div>
+                    <div class="img_cont">
+                        <p></p>
+                        <p><a class="works_imgs_t">Name preject</a><a class="works_imgs_d">Download from dribbble.com | May 8, 2017</a></p>
+                    </div>
+                    <div class="img_cont">
+                        <p></p>
+                        <p><a class="works_imgs_t">Name preject</a><a class="works_imgs_d">Download from dribbble.com | May 8, 2017</a></p>
+                    </div>
+                    <div class="img_cont">
+                        <p></p>
+                        <p><a class="works_imgs_t">Name preject</a><a class="works_imgs_d">Download from dribbble.com | May 8, 2017</a></p>
+                    </div>
+                    <div class="img_cont">
+                        <p></p>
+                        <p><a class="works_imgs_t">Name preject</a><a class="works_imgs_d">Download from dribbble.com | May 8, 2017</a></p>
+                    </div>
+                    <div class="img_cont">
+                        <p></p>
+                        <p><a class="works_imgs_t">Name preject</a><a class="works_imgs_d">Download from dribbble.com | May 8, 2017</a></p>
+                    </div>
                 </div>
 
-                <input class="more" id="workMore" type="image" src="images/more.png" onclick="worksM()">
+                <input class="more" id="get_more_works" type="image" src="images/more.png">
 
             </div>
         </div>
         <div id="works_more" class="works_more">
-            <div class="works_more_all">
                 <div class="container">
-                    <div class="works_imgs_more">
+                    <div class="img_cont">
                         <p></p>
-                        <p></p>
-                        <p class="margin-right-none"></p>
-                        <p class="clear"></p>
-                        <p></p>
-                        <p class="margin-right-none"></p>
+                        <p><a class="works_imgs_t">Name preject</a><a class="works_imgs_d">Download from dribbble.com | May 8, 2017</a></p>
                     </div>
-                    <div class="works_imgs_alt_more">
-                        <p><a class="works_imgs_alt_n">Name preject</a><br><a class="works_imgs_alt_t">Designed by simmzl | May 8, 2017</a></p>
-                        <p><a class="works_imgs_alt_n">Name preject</a><br><a class="works_imgs_alt_t">Designed by simmzl | May 8, 2017</a></p>
-                        <p class="margin-right-none"><a class="works_imgs_alt_n">Name preject</a><br><a class="works_imgs_alt_t">Designed by simmzl | May 8, 2017</a></p>
-                        <p><a class="works_imgs_alt_n">Name preject</a><br><a class="works_imgs_alt_t">Designed by simmzl | May 8, 2017</a></p>
-                        <p><a class="works_imgs_alt_n">Name preject</a><br><a class="works_imgs_alt_t">Designed by simmzl | May 8, 2017</a></p>
-                        <p class="margin-right-none"><a class="works_imgs_alt_n">Name preject</a><br><a class="works_imgs_alt_t">Designed by simmzl | May 8, 2017</a></p>
+                    <div class="img_cont">
+                        <p></p>
+                        <p><a class="works_imgs_t">Name preject</a><a class="works_imgs_d">Download from dribbble.com | May 8, 2017</a></p>
                     </div>
-                    <div class="clear"></div>
+                    <div class="img_cont">
+                        <p></p>
+                        <p><a class="works_imgs_t">Name preject</a><a class="works_imgs_d">Download from dribbble.com | May 8, 2017</a></p>
+                    </div>
+                    <div class="img_cont">
+                        <p></p>
+                        <p><a class="works_imgs_t">Name preject</a><a class="works_imgs_d">Download from dribbble.com | May 8, 2017</a></p>
+                    </div>
+                    <div class="img_cont">
+                        <p></p>
+                        <p><a class="works_imgs_t">Name preject</a><a class="works_imgs_d">Download from dribbble.com | May 8, 2017</a></p>
+                    </div>
+                    <div class="img_cont">
+                        <p></p>
+                        <p><a class="works_imgs_t">Name preject</a><a class="works_imgs_d">Download from dribbble.com | May 8, 2017</a></p>
+                    </div>
                 </div>
-            </div>
         </div>
         <div class="person" >
             <div class="container">
@@ -215,31 +211,30 @@
                         </div>
                     </div>
                 </div>
-                <!--<input class="more" type="image" src="images/more.png">-->
             </div>
         </div>
         <div id="number" class="number">
                 <div class="container">
                     <div class="numberAll ">
-                        <div class="number1">
+                        <div class="number_f">
                             <img src="images/number_01.png" alt="1">
-                            <p class="nub2009">2009</p>
-                            <p class="nub2009_text">Perspiciatis</p>
+                            <p >2009</p>
+                            <p >PERDSAD</p>
                         </div>
-                        <div class="number2">
+                        <div class="number_l">
                             <img src="images/number_03.png" alt="1">
-                            <p style="font-size: 60px">13,562</p>
-                            <p style="font-size: 18px">COMMENTS</p>
+                            <p >13,562</p>
+                            <p >COMMENTS</p>
                         </div>
-                        <div class="number3">
+                        <div class="number_l">
                             <img src="images/number_05.png" alt="1">
-                            <p style="font-size: 60px">8,710</p>
-                            <p style="font-size: 18px">COFFEE CUPS</p>
+                            <p >8,710</p>
+                            <p >COFFEE CUPS</p>
                         </div>
-                        <div class="number4">
+                        <div class="number_l">
                             <img src="images/number_07.png" alt="1">
-                            <p style="font-size: 60px">1015</p>
-                            <p style="font-size: 18px">AWARDS</p>
+                            <p >1015</p>
+                            <p >AWARDS</p>
                         </div>
                     </div>
                 </div>
@@ -248,62 +243,93 @@
             <div class="container">
                 <p class="skills_l">OUR<br>SKILLS.</p>
                 <div class="sFour fl">
-                    <img class="s1" src="images/s1.png" alt="">
-                    <img class="s2" src="images/s2.png" alt="">
-                    <img class="s3" src="images/s3.png" alt="">
-                    <img class="s4" src="images/s4.png" alt="">
+                    <img src="images/s1.png" alt="">
+                    <img src="images/s2.png" alt="">
+                    <img src="images/s3.png" alt="">
+                    <img src="images/s4.png" alt="">
                 </div>
-                <div class="skills_r fr">
-                    <div class="huojian fl">
-                        <img class="skills1 fl" src="images/skills_03.png" alt="">
-                        <p class="skills1_1 fl">Totam rem aperiam eaque</p>
-                        <input type="image" src="images/plus.png" id="toPlus1" onclick="toMore()">
+                <div class="skills_r fr" id="list">
+                    <div id="2">
+                        <div class="skills_list fl">
+                            <img class="skills_li_img fl" src="images/skills_03.png" alt="">
+                            <p class=" skills_li_t fl">Totam rem aperiam eaque</p>
+                            <input type="image" src="images/plus.png">
+                        </div>
+                        <p  class="skills_li_d fl">Duis aute irure dolor in reprehenderit in voluptate velit
+                            esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident.</p>
                     </div>
 
-                    <p id="more0" class="skills1_2 fl">Duis aute irure dolor in reprehenderit in voluptate velit
-                        esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident.</p>
-
-                    <div class="lock fl">
-                        <img class="skills1 fl" src="images/skills_06.png" alt="">
-                        <p class="skills2 fl">Nemo enim ipsam voluptatem</p>
-                        <input type="image" id="toPlus2" src="images/plus.png" onclick="toMore1()">
+                    <div>
+                        <div class="skills_list fl">
+                            <img class="skills_li_img fl" src="images/skills_03.png" alt="">
+                            <p class=" skills_li_t fl">Totam rem aperiam eaque</p>
+                            <input type="image" src="images/plus.png" >
+                        </div>
+                        <p  class="skills_li_d fl">Duis aute irure dolor in reprehenderit in voluptate velit
+                            esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident.</p>
                     </div>
-                    <p id="more1" class="skills1_2 fl">Duis aute irure dolor in reprehenderit in voluptate velit
-                        esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident.</p>
-
-                    <div class="jiantou fl">
-                        <img class="skills1 fl" src="images/skills_08.png" alt="">
-                        <p class="skills2 fl">Ut enim ad minima veniam</p>
-                        <input type="image" id="toPlus3" src="images/plus.png" onclick="toMore2()">
+                    <div>
+                        <div class="skills_list fl">
+                            <img class="skills_li_img fl" src="images/skills_03.png" alt="">
+                            <p class=" skills_li_t fl">Totam rem aperiam eaque</p>
+                            <input type="image" src="images/plus.png" >
+                        </div>
+                        <p  class="skills_li_d fl">Duis aute irure dolor in reprehenderit in voluptate velit
+                            esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident.</p>
                     </div>
-                    <p id="more2" class="skills1_2 fl">Duis aute irure dolor in reprehenderit in voluptate velit
-                        esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident.</p>
-
-                    <div class="tel fl">
-                        <img class="skills1 fl" src="images/skills_10.png" alt="">
-                        <p class="skills2 fl">Quis nostrum exercitationem ullam</p>
-                        <input type="image" id="toPlus4" src="images/plus.png" onclick="toMore3()">
+                    <div>
+                        <div class="skills_list fl">
+                            <img class="skills_li_img fl" src="images/skills_03.png" alt="">
+                            <p class=" skills_li_t fl">Totam rem aperiam eaque</p>
+                            <input type="image" src="images/plus.png" >
+                        </div>
+                        <p  class="skills_li_d fl">Duis aute irure dolor in reprehenderit in voluptate velit
+                            esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident.</p>
                     </div>
-                    <p id="more3" class="skills1_2 fl">Duis aute irure dolor in reprehenderit in voluptate velit
-                        esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident.</p>
+                    <!--<div class="skills_list fl">-->
+                        <!--<img class="skills1 fl" src="images/skills_06.png" alt="">-->
+                        <!--<p class="skills2 fl">Nemo enim ipsam voluptatem</p>-->
+                        <!--<input type="image" id="toPlus2" src="images/plus.png" onclick="toMore1()">-->
+                    <!--</div>-->
+                    <!--<p id="more1" class="skills1_2 fl">Duis aute irure dolor in reprehenderit in voluptate velit-->
+                        <!--esse cillum dolore eu fugiat nulla pariatur.-->
+                        <!--Excepteur sint occaecat cupidatat non proident.</p>-->
 
-                    <div class="book fl">
-                        <img class="skills1 fl" src="images/skills_12.png" alt="">
-                        <p class="skills2 fl">Neque porro quisquam est qui</p>
-                        <input type="image" id="toPlus5" src="images/plus.png" onclick="toMore4()">
-                    </div>
-                    <p id="more4" class="skills1_2 fl">Duis aute irure dolor in reprehenderit in voluptate velit
-                        esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident.</p>
+                    <!--<div class="skills_list fl">-->
+                        <!--<img class="skills1 fl" src="images/skills_08.png" alt="">-->
+                        <!--<p class="skills2 fl">Ut enim ad minima veniam</p>-->
+                        <!--<input type="image" id="toPlus3" src="images/plus.png" onclick="toMore2()">-->
+                    <!--</div>-->
+                    <!--<p id="more2" class="skills1_2 fl">Duis aute irure dolor in reprehenderit in voluptate velit-->
+                        <!--esse cillum dolore eu fugiat nulla pariatur.-->
+                        <!--Excepteur sint occaecat cupidatat non proident.</p>-->
+
+                    <!--<div class="skills_list fl">-->
+                        <!--<img class="skills1 fl" src="images/skills_10.png" alt="">-->
+                        <!--<p class="skills2 fl">Quis nostrum exercitationem ullam</p>-->
+                        <!--<input type="image" id="toPlus4" src="images/plus.png" onclick="toMore3()">-->
+                    <!--</div>-->
+                    <!--<p id="more3" class="skills1_2 fl">Duis aute irure dolor in reprehenderit in voluptate velit-->
+                        <!--esse cillum dolore eu fugiat nulla pariatur.-->
+                        <!--Excepteur sint occaecat cupidatat non proident.</p>-->
+
+                    <!--<div class="skills_list fl">-->
+                        <!--<img class="skills1 fl" src="images/skills_12.png" alt="">-->
+                        <!--<p class="skills2 fl">Neque porro quisquam est qui</p>-->
+                        <!--<input type="image" id="toPlus5" src="images/plus.png" onclick="toMore4()">-->
+                    <!--</div>-->
+                    <!--<p id="more4" class="skills1_2 fl">Duis aute irure dolor in reprehenderit in voluptate velit-->
+                        <!--esse cillum dolore eu fugiat nulla pariatur.-->
+                        <!--Excepteur sint occaecat cupidatat non proident.</p>-->
 
                 </div>
                 <div class="skills_t">
-                    <p class="skills_t1 fl clear">Something about our skills</p>
-                    <p class="skills_t2 fl clear">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    <p class="skills_t_title fl clear">Something about our skills</p>
+                    <p class="skills_t_dec fl clear">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 </div>
             </div>
@@ -317,19 +343,21 @@
                     <a href="#"><s class="contact_fa fl"></s></a>
                     <a href="#"><s class="contact_in fl"></s></a>
                 </div>
-                <input type="email" class="contact_email fl" placeholder="  Input your email...">
-                <input type="text" class="contact_name fl" placeholder="  Input your name...">
-                <input type="text" class="contact_msg fl" placeholder="  Input message...">
-                <input type="submit" class="contact_sub fl" value="Submit">
+                <form action="">
+                    <input type="email" class="contact_email fl" placeholder="  Input your email...">
+                    <input type="text" class="contact_name fl" placeholder="  Input your name...">
+                    <input type="text" class="contact_msg fl" placeholder="  Input message...">
+                    <input type="submit" class="contact_sub fl trans" value="Submit">
+                </form>
             </div>
         </div>
 
         <div class="footer">
             <p class="footer_logo">CQ STUDIO</p>
-            <P class="footer_copy">&copy;2017 CQ STUDIO. All rights resevered.<br>Write by SIMMZL.<br><a href="#number"><img src="images/totop.png"></a></P>
-
+            <P class="footer_copy">&copy;2017 CQ STUDIO. All rights reserved.<br>Writed by SIMMZL.<br><a href="#top"><img src="images/totop.png"></a></P>
         </div>
 
     </div>
+    <script language="JavaScript" src="js/main.js"></script>
 </body>
 </html>
