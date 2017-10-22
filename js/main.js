@@ -1,80 +1,97 @@
 /**
- * Created by zelong on 2017/5/29.
+ * Created by simmzl on 2017/5/29.
+ * Refactored by simmzl on 2017/10/22.
  */
-let worksStatus = document.getElementById( "works_more");
+let worksStatus = document.getElementById("works_more");
 let worksBtn = document.getElementById("get_more_works");
 
 let list = document.getElementById('list');
 
-worksBtn.addEventListener('click',function () {
-    if(worksStatus.style.display !== 'block'){
+let worksImgs = document.getElementById('works_imgs');
+let worksMore = document.getElementById('works_more');
+
+let play = document.getElementById('play');
+let playAll = document.getElementById('play_all');
+let header = document.getElementById('header');
+let video = document.getElementById('video');
+let pause = document.getElementById('pause');
+
+let imgs = document.getElementsByTagName('img');
+for (let i = 0; i < imgs.length; i++) {
+    imgs.item(i).onmousedown = function (e) {
+        e.preventDefault();
+    }
+}
+
+worksBtn.addEventListener('click', () => {
+    if (worksStatus.style.display !== 'block') {
         worksStatus.style.display = 'block';
         worksBtn.setAttribute("src", "images/back.png");
-    }else {
+    } else {
         worksStatus.style.display = "none";
         worksBtn.setAttribute("src", "images/more.png");
     }
 });
 
-list.addEventListener('click',function (e) {
-    // alert(e.target.nodeName);
+list.addEventListener('click', e => {
     let el = e.target;
-    let text = el.parentNode.nextSibling.id;
-    if(el.nodeName.toLowerCase() === 'input'){
-        alert(text);
+    let text = el.parentNode.nextElementSibling;
+    let status = text.style.display;
+    if (el.nodeName.toLowerCase() === 'input') {
+        if (status === 'none' || status === '') {
+            text.style.display = 'block';
+            el.setAttribute('src', 'images/reduce.png');
+        } else {
+            text.style.display = 'none';
+            el.setAttribute('src', 'images/plus.png');
+        }
     }
 });
-// function toMore(){
-//     document.getElementById( "more0").style.display="block";
-//     document.getElementById("toPlus1").setAttribute("src", "images/reduce.png");
-//     document.getElementById("toPlus1").setAttribute("onclick", "toReduce()");
-// }
-// function toReduce(){
-//     document.getElementById( "more0").style.display="none";
-//     document.getElementById("toPlus1").setAttribute("onclick", "toMore()");
-//     document.getElementById("toPlus1").setAttribute("src", "images/plus.png");
-// }
-//
-// function toMore1(){
-//     document.getElementById( "more1").style.display="inline";
-//     document.getElementById("toPlus2").setAttribute("src", "images/reduce.png");
-//     document.getElementById("toPlus2").setAttribute("onclick", "toReduce1()");
-// }
-// function toReduce1(){
-//     document.getElementById( "more1").style.display="none";
-//     document.getElementById("toPlus2").setAttribute("onclick", "toMore1()");
-//     document.getElementById("toPlus2").setAttribute("src", "images/plus.png");
-// }
-//
-// function toMore2(){
-//     document.getElementById( "more2").style.display="inline";
-//     document.getElementById("toPlus3").setAttribute("src", "images/reduce.png");
-//     document.getElementById("toPlus3").setAttribute("onclick", "toReduce2()");
-// }
-// function toReduce2(){
-//     document.getElementById( "more2").style.display="none";
-//     document.getElementById("toPlus3").setAttribute("onclick", "toMore2()");
-//     document.getElementById("toPlus3").setAttribute("src", "images/plus.png");
-// }
-//
-// function toMore3(){
-//     document.getElementById( "more3").style.display="inline";
-//     document.getElementById("toPlus4").setAttribute("src", "images/reduce.png");
-//     document.getElementById("toPlus4").setAttribute("onclick", "toReduce3()");
-// }
-// function toReduce3(){
-//     document.getElementById( "more3").style.display="none";
-//     document.getElementById("toPlus4").setAttribute("onclick", "toMore3()");
-//     document.getElementById("toPlus4").setAttribute("src", "images/plus.png");
-// }
-//
-// function toMore4(){
-//     document.getElementById( "more4").style.display="block";
-//     document.getElementById("toPlus5").setAttribute("src", "images/reduce.png");
-//     document.getElementById("toPlus5").setAttribute("onclick", "toReduce4()");
-// }
-// function toReduce4(){
-//     document.getElementById( "more4").style.display="none";
-//     document.getElementById("toPlus5").setAttribute("onclick", "toMore4()");
-//     document.getElementById("toPlus5").setAttribute("src", "images/plus.png");
-// }
+
+let enter = e => {
+    let el = e.target, img;
+    let first = el.parentNode.className === 'img_cont', second = el.parentNode.parentNode.className === "img_cont";
+    if (first) {
+        img = el.parentNode;
+    } else if (second) {
+        img = el.parentNode.parentNode;
+    }
+    if (first || second) {
+        img.firstElementChild.style.height = '270px';
+        img.firstElementChild.style.borderBottomRightRadius = '0';
+        img.firstElementChild.style.borderBottomLeftRadius = '0';
+    }
+};
+let out = e => {
+    let el = e.target, img;
+    let first = el.parentNode.className === 'img_cont', second = el.parentNode.parentNode.className === "img_cont";
+    if (first) {
+        img = el.parentNode;
+    } else if (second) {
+        img = el.parentNode.parentNode;
+    }
+    if (first || second) {
+        img.firstElementChild.style.height = '370px';
+        img.firstElementChild.style.borderBottomRightRadius = '10px';
+        img.firstElementChild.style.borderBottomLeftRadius = '10px';
+    }
+};
+worksImgs.addEventListener('mouseover', enter);
+worksMore.addEventListener('mouseover', enter);
+worksImgs.addEventListener('mouseout', out);
+worksMore.addEventListener('mouseout', out);
+
+play.addEventListener('click', () => {
+    playAll.style.display = 'none';
+    pause.style.display = 'inherit';
+    header.style.backgroundColor = 'rgba(102,102,102,0)';
+    video.muted = false;
+    video.style.opacity = '1';
+});
+pause.addEventListener('click', () => {
+    playAll.style.display = 'inherit';
+    pause.style.display = 'none';
+    header.style.backgroundColor = 'rgba(102,102,102,0.5)';
+    video.muted = true;
+    video.style.opacity = '0.5';
+});
